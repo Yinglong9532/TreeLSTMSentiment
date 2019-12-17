@@ -1,3 +1,9 @@
+
+12/16/2019
+
+fix to pytorch >=1.0.0
+
+------
 # Tree-Structured Long Short-Term Memory Networks
 A [PyTorch](http://pytorch.org/) based implementation of Tree-LSTM from Kai Sheng Tai's paper
 [Improved Semantic Representations From Tree-Structured Long Short-Term Memory
@@ -12,6 +18,8 @@ Networks](http://arxiv.org/abs/1503.00075).
 
 ## Usage
 First run the script `./fetch_and_preprocess.sh`
+
+hints: you should set java bin in $PATH to run `javac`
 
 This downloads the following data:
   - [Stanford Sentiment Treebank](http://nlp.stanford.edu/sentiment/index.html) (sentiment classification task)

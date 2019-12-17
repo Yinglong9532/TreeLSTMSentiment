@@ -1,0 +1,1 @@
+python sentiment.py --name temp_log_file --model_name dependency --epochs 10

@@ -69,7 +69,7 @@ class SentimentTrainer(object):
             emb = F.torch.unsqueeze(self.embedding_model(input),1)
             output, _ = self.model(tree, emb) # size(1,5)
             err = self.criterion(output, target)
-            loss += err.data[0]
+            loss += err.data
             output[:,1] = -9999 # no need middle (neutral) value
             val, pred = torch.max(output, 1)
             #predictions[idx] = pred.data.cpu()[0][0]
